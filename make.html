@@ -8,7 +8,7 @@
 <style type="text/css">
 
     /* CLIENT-SPECIFIC STYLES */
-    /* #outlook a{padding:0;}  Force Outlook to provide a "view in browser" message */
+    #outlook a{padding:0;}  /*Force Outlook to provide a "view in browser" message */   
     .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
     .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
     body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
@@ -115,8 +115,10 @@
                                             <td align="right" style="padding: 0 70px 10px 70px; font-size: 15px; line-height: 20px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">
                                             	<table width="165"><tr><td>
 	                                            	 <img src="https://raw.githubusercontent.com/work-shop/gsd-email-templates/master/img/soohoo-signature.png" width="154" height="42" border="0" alt="C. SooHoo signature" style="display: block; padding: 0; color: #666666; text-decoration: none; font-family: Helvetica, arial, sans-serif; font-size: 15px; width: 154px; height: 42px; padding-bottom: 15px" class="img-max">
-	                                            	<p>Christopher SooHoo<br /> 
-	                                        		MArch ‘16</p>
+	                                            	<p style="font-family: Helvetica, arial, sans-serif; margin-bottom: 40px; color: #666666;">
+                                                    Christopher SooHoo<br /> 
+	                                        		MArch ‘16
+                                                    </p>
 	                                        	</td></tr></table>
                                             </td>
                                         </tr>
@@ -159,12 +161,26 @@
                                         </tr>
                                     </table>
                                     <!-- BULLETPROOF BUTTON -->
-                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container" style="margin-top: 30px;">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container" style="margin-top: 15px;">
                                         <tr>
                                             <td align="center" style="padding: 0 70px 40px 70px;" class="padding-copy">
                                                 <table border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                                                     <tr>
-                                                        <td align="center"><a href="https://secure.post.harvard.edu/olc/pub/HAA/onlinegiving/showGivingForm.jsp?form_id=145553" target="_blank" style="font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-transform: uppercase; color: #f0525a; text-decoration: none; background-color: #FFFFFF; padding: 12px 18px 10px 18px; display: inline-block;" class="mobile-button">Make Your Gift</a></td>
+                                                        <td align="center">
+                                                            <div>
+                                                                <!--[if mso]>
+                                                                  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://secure.post.harvard.edu/olc/pub/HAA/onlinegiving/showGivingForm.jsp?form_id=145553" style="height:50px;v-text-anchor:middle;width:200px;" stroke="f" fillcolor="#ffffff">
+                                                                    <w:anchorlock/>
+                                                                    <center>
+                                                                  <![endif]-->
+                                                                      <a href="https://secure.post.harvard.edu/olc/pub/HAA/onlinegiving/showGivingForm.jsp?form_id=145553"
+                                                                style="background-color:#ffffff;color:#f0525a;display:inline-block;font-family:sans-serif;font-size:18px; text-transform: uppercase; line-height:50px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;">Make Your Gift</a>
+                                                                  <!--[if mso]>
+                                                                    </center>
+                                                                  </v:rect>
+                                                                <![endif]-->
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                 </table>
                                             </td>
@@ -208,9 +224,22 @@
                                     <table width="310" border="0" cellspacing="0" cellpadding="0" align="right">
                                         <tr>
                                             <td style="padding: 30px 60px 15px 0px; font-size: 15px; line-height: 24px; font-family: Helvetica, Arial, sans-serif; color: #FFFFFF;" class="padding-copy">
-                                                Join the Josep Lluís Sert Council, our annual leadership giving society, with a donation of $1,000 or more. 
-                                                <a href="http://www.gsd.harvard.edu/#/about/gsd-external-relations/support.html#sert_council" target="_blank" style="font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-transform: uppercase; color: #FFFFFF; text-decoration: none; background-color: #f0525a; padding: 12px 18px 10px 18px; display: inline-block; margin-top: 30px;" class="mobile-button">Learn More</a>
-                                            </td>
+                                                <p style="margin-bottom: 20px;" >Join the Josep Lluís Sert Council, our annual leadership giving society, with a donation of $1,000 or more. 
+                                                </p>
+                                                <div>
+                                                    <!--[if mso]>
+                                                      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.gsd.harvard.edu/#/about/gsd-external-relations/support.html#sert_council" style="height:50px;v-text-anchor:middle;width:200px;" stroke="f" fillcolor="#f0525a">
+                                                        <w:anchorlock/>
+                                                        <center>
+                                                      <![endif]-->
+                                                          <a href="http://www.gsd.harvard.edu/#/about/gsd-external-relations/support.html#sert_council"
+                                                    style="background-color:#f0525a;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:18px; text-transform: uppercase; line-height:50px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;">Learn More</a>
+                                                      <!--[if mso]>
+                                                        </center>
+                                                      </v:rect>
+                                                    <![endif]-->
+                                                </div> 
+                                            </td>                                                   
                                         </tr>
                                     </table>                                    
                                 </td>
@@ -257,7 +286,9 @@
                                                 <table cellpadding="0" cellspacing="0" border="0">
                                                     <tr>
                                                         <td align="center" bgcolor="#f0525a" valign="middle">
-                                                        	<a href="http://www.groundedvisionaries.org/" target="_blank"><img src="https://raw.githubusercontent.com/work-shop/gsd-email-templates/master/img/gv-logo.png" width="200" height="70" style="display: block; color: #FFFFFF; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 200px; height: 70px;" alt="Grounded Visionaries" border="0" class="img-max"></a>
+                                                        	<a href="http://www.groundedvisionaries.org/" target="_blank">
+                                                                <img src="https://raw.githubusercontent.com/work-shop/gsd-email-templates/master/img/gv-logo.png" width="200" height="70" style="display: block; color: #FFFFFF; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 200px; height: 70px;" alt="Grounded Visionaries" border="0" class="img-max">
+                                                            </a>
                                                         </td>
                                                     </tr>
                                                 </table>
